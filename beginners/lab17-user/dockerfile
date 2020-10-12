@@ -1,0 +1,3 @@
+FROM redis
+USER redis
+CMD [ "redis-server" ]

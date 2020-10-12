@@ -1,0 +1,6 @@
+FROM ubuntu
+#override default shell /bin/sh
+#if you comment out the line below, the CMD will fail with error /bin/sh: 1: [[: not found
+#because [[ is specific to bash only
+SHELL ["/bin/bash", "-c"]
+CMD [[ 1 == 1 ]] && echo true
