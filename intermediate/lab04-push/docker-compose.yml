@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  customNginx:
+    build:
+      context: .
+      dockerfile: dockerfile_nginx
+    image: lucasgvarela2/custom_nginx_dockerlabs:1.0
+  customHttpd:
+    build:
+      context: .
+      dockerfile: dockerfile_httpd
+    image: lucasgvarela2/custom_httpd_dockerlabs:1.0
